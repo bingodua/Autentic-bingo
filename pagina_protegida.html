@@ -1,1 +1,22 @@
-
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Autentic</title></head>
+<body style="font-family: sans-serif; padding:20px;">
+<h2>Protegido</h2>
+<p>Digite a senha para continuar.</p>
+<input id="pw" type="password" placeholder="Senha">
+<button id="ok">OK</button>
+<p id="msg" style="color:red;"></p>
+<script>
+  const correct="001dubingo2026";
+  document.getElementById("ok").onclick=()=>{
+    const v=document.getElementById("pw").value;
+    if(v===correct){
+      window.location.href="https://pin.it/2JoR4NQyN";
+    } else {
+      document.getElementById("msg").textContent="Senha incorreta.";
+    }
+  };
+</script>
+</body>
+</html>
